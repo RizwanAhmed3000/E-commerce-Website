@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+header a{
+    text-decoration: none;
+    color: black;
+}
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #fff;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+.iconsRight i, .iconsLeft i, .navLeft a, .navRight a{
+    margin: 0px 8px;
+}
+.logo{
+    font-size: 20px;
+}
