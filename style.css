@@ -46,6 +46,11 @@ h1{
     background-color: #f976a1 !important;
     border-color: #f976a1 !important;
 }
+.btn:hover#button4{
+    color: white !important;
+    background-color: black !important;
+    border-color: black !important;
+}
 .productGuide{
     display: flex;
     flex-direction: column;
@@ -58,4 +63,7 @@ h1{
 }
 .newArrivals{
     background-color: #fff;
+}
+.banner{
+    padding-top: 20px;
 }
