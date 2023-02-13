@@ -12,6 +12,10 @@
 
     <script src="https://kit.fontawesome.com/96a2384ef6.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://kit.fontawesome.com/96a2384ef6.css" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -23,7 +27,25 @@
         <div class="nav" style="align-items: baseline;">
             <nav class="navLeft" style="margin: 0px 5px; ">
                 <a href="#Home">Home</a>
-                <a href="#Product">Products</a>
+                <!-- Example split danger button -->
+                <div class="btn-group dropdown-center" style="margin-bottom: 5px;">
+                    <button type="button" class="btn btn-danger"
+                        style="background-color: white; color: black; border: none; padding: 0px; height: inherit;">Products</button>
+                    <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split"
+                        style="background-color: white; color: black; border: none; padding: 0px; margin-left: 5px; margin-top: 3px;"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="visually-hidden">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                    </ul>
+                </div>
             </nav>
             <a href="#Home" class="logo" style="margin: 0px 20px;">The<span>Cloths</span></a>
             <nav class="navRight" style="margin: 0px 5px;">
@@ -67,7 +89,7 @@
         </div>
     </nav> -->
 
-    <div id="carouselExampleCaptions" class="carousel slide" style="position: absolute; top: 40px; ">
+    <div id="carouselExampleCaptions" class="carousel slide" style="margin-top: 40px;">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
                 aria-current="true" aria-label="Slide 1"></button>
@@ -79,23 +101,41 @@
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="assets/assets/slider_01.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption  d-flex flex-column justify-content-between" style="position: absolute; top: 50%; right: 0; left: 0;">
-                    <h1 class="fst-italic align-top" style="font-size: 65px ;color: #fff5f5;">Feel The Color</h1>
-                    <p style="color: #fff5f5;">Some representative placeholder content for the first slide.</p>
+                <div class="carousel-caption  d-flex flex-column">
+                    <h1 class="fst-italic align-top"
+                        style="font-size: 65px ;color: #51b5ff;text-shadow: 1px 1px 1px black; font-family: 'Frank Ruhl Libre', serif;">
+                        Feel The Color</h1>
+                    <p style="color: #51b5ff; text-shadow: 1px 1px 1px black;">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Repellat, natus.</p>
+                    <button type="button" class="btn btn-outline-info"
+                        style="width: fit-content; align-self: center; border-color: #51b5ff; color: #51b5ff;">Shop
+                        Now</button>
                 </div>
             </div>
             <div class="carousel-item">
                 <img src="assets/assets/slider_02.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption  d-flex flex-column justify-content-between" style="position: absolute; top: 50%; right: 0; left: 0;">
-                    <h1 class="fst-italic align-top" style="font-size: 65px ; color: #fff5f5;">Second slide label</h1>
-                    <p style="color: #fff5f5;">Some representative placeholder content for the second slide.</p>
+                <div class="carousel-caption  d-flex flex-column">
+                    <h1 class="fst-italic align-top"
+                        style="font-size: 65px ; color: #fff5f5; text-shadow: 1px 1px 1px black; font-family: 'Frank Ruhl Libre', serif;">
+                        Shades of brown</h1>
+                    <p style="color: #fff5f5; text-shadow: 1px 1px 1px black;">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Dignissimos, ipsa.</p>
+                    <button type="button" class="btn btn-outline-primary" id="button2"
+                        style="width: fit-content; align-self: center;border-color: #fff5f5; color: #fff5f5;">Shop
+                        Now</button>
                 </div>
             </div>
             <div class="carousel-item">
                 <img src="assets/assets/slider_03.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-flex flex-column justify-content-between" style="position: absolute; top: 50%; right: 0; left: 0;">
-                    <h1 class="fst-italic align-top" style="font-size: 65px ;color: #fff5f5;">Third slide label</h1>
-                    <p style="color: #fff5f5;">Some representative placeholder content for the third slide.</p>
+                <div class="carousel-caption d-flex flex-column">
+                    <h1 class="fst-italic align-top"
+                        style="font-size: 65px ;color: #51b5ff; text-shadow: 1px 1px 1px black; font-family: 'Frank Ruhl Libre', serif;">
+                        Hoddies & <span style="color: #f976a1;">Sweater</span></h1>
+                    <p style="color: #51b5ff; text-shadow: 1px 1px 1px black;">Lorem ipsum dolor, sit amet consectetur
+                        adipisicing elit. Id, qui.</p>
+                    <button type="button" class="btn btn-outline-primary" id="button3"
+                        style="width: fit-content; align-self: center; border-color: #f976a1; color: #f976a1;">Shop
+                        Now</button>
                 </div>
             </div>
         </div>
@@ -109,6 +149,32 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
+    </div>
+    <div class="productGuide">
+        <h1>Product Guide</h1>
+        <div class="container d-flex justify-content-center">
+            <div class="card" style="width: 18rem; margin: 10px 10px; background: none; border: none;">
+                <img src="assets/assets/guide_01.png" class="card-img-top" alt="...">
+                <div class="card-body" style="padding-left:3px; padding-right: 3px;">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem; margin: 10px 10px; background: none; border: none;">
+                <img src="assets/assets/guide_02.png" class="card-img-top" alt="...">
+                <div class="card-body" style="padding-left:3px; padding-right: 3px;">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem; margin: 10px 10px; background: none; border: none;">
+                <img src="assets/assets/guide_03.png" class="card-img-top" alt="...">
+                <div class="card-body" style="padding-left:3px; padding-right: 3px;">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </div>
+        </div>
     </div>
 
 

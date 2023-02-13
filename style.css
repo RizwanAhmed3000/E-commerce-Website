@@ -21,9 +21,38 @@ header{
     box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
     z-index: 1000;
 }
+h1{
+    font-family: 'Frank Ruhl Libre', serif;
+}
 .iconsRight i, .iconsLeft i, .navLeft a, .navRight a{
     margin: 0px 8px;
 }
 .logo{
+    font-family: 'Frank Ruhl Libre', serif;
     font-size: 20px;
+}
+.btn:hover{
+    color: black !important;
+    background-color: #51b5ff !important;
+    border-color: #51b5ff !important;
+}
+.btn:hover#button2{
+    color: black !important;
+    background-color: #fff5f5 !important;
+    border-color: #fff5f5 !important;
+}
+.btn:hover#button3{
+    color: black !important;
+    background-color: #f976a1 !important;
+    border-color: #f976a1 !important;
+}
+.productGuide{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aquamarine;
+}
+.productGuide h1{
+    margin-top: 70px;
+    margin-bottom:20px;
 }
