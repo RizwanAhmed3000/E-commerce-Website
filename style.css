@@ -1,79 +1,151 @@
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
-header a{
+
+header a {
     text-decoration: none;
     color: black;
 }
-header{
+
+header {
     position: fixed;
-    top: 0; left: 0; right: 0;
+    top: 0;
+    left: 0;
+    right: 0;
     padding: 5px;
     display: flex;
     align-items: center;
     justify-content: space-around;
     background-color: #fff;
-    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
     z-index: 1000;
 }
-h1{
+
+h1, h2 {
     font-family: 'Frank Ruhl Libre', serif;
 }
-.iconsRight i, .iconsLeft i, .navLeft a, .navRight a{
+
+.iconsRight i,
+.iconsLeft i,
+.navLeft a,
+.navRight a {
     margin: 0px 8px;
 }
-.logo{
+
+.logo {
     font-family: 'Frank Ruhl Libre', serif;
     font-size: 20px;
 }
-.btn:hover{
+
+.btn:hover {
     color: black !important;
     background-color: #51b5ff !important;
     border-color: #51b5ff !important;
     border-radius: 0 !important;
 }
-.btn:hover#button2{
+
+.btn:hover#button2 {
     color: black !important;
     background-color: #fff5f5 !important;
     border-color: #fff5f5 !important;
     border-radius: 0 !important;
 }
-.btn:hover#button3{
+
+.btn:hover#button3 {
     color: black !important;
     background-color: #f976a1 !important;
     border-color: #f976a1 !important;
     border-radius: 0 !important;
 }
-.btn:hover#button4{
+
+.btn:hover#button4 {
     color: white !important;
     background-color: black !important;
     border-color: black !important;
     border-radius: 0 !important;
 }
-.btn:hover#button5{
+
+.btn:hover#button5 {
     color: black !important;
     background-color: white !important;
     border-color: black !important;
     border-radius: 0 !important;
 }
-.productGuide{
+
+.productGuide {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #f5f4f4;
 }
-.productGuide h1{
+
+.productGuide h1 {
     margin-top: 70px;
-    margin-bottom:20px;
+    margin-bottom: 50px;
 }
-.newArrivals{
+
+.newArrivals {
     background-color: #fff;
 }
-.banner{
+
+.banner {
     padding-top: 20px;
+}
+.formTheBlog, .instaPost{
+    background-color: white !important;
+}
+.post {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.footer {
+    padding: 30px;
+    background-color: #f5f4f4;
+}
+
+.icon {
+    padding: 10px;
+    min-width: 50px;
+    height: 100%;
+    text-align: center;
+    align-self: stretch;
+}
+.form-control:focus{
+    box-shadow: none !important;
+    border-color: gray !important;
+}
+.right div ul li{
+    list-style: none;
+    margin: 10px 1px;
+}
+.right div ul li a{
+    text-decoration: none;
+    color: gray;
+}
+.right div ul{
+    padding: 20px;
+    margin-bottom: 0;
+}
+.left{
+    padding: 10px 100px;
+    align-self: center;
+}
+.left p{
+    font-size: 12px;
+}
+.icons i{
+    margin: 10px;
+}
+.copyrights{
+    margin: 0;
 }
