@@ -43,11 +43,16 @@ h1, h2 {
     font-size: 20px;
 }
 
-.btn:hover {
+.btn:hover#button1 {
     color: black !important;
     background-color: #51b5ff !important;
     border-color: #51b5ff !important;
     border-radius: 0 !important;
+}
+
+.btn:hover{
+    background-color: white !important;
+    border-color: white !important;
 }
 
 .btn:hover#button2 {
