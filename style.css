@@ -46,6 +46,7 @@ header {
 }
 
 .menuContent {
+    visibility: collapse;
     /* display: none; */
     position: absolute;
     background-color: #fff;
@@ -69,6 +70,7 @@ header {
 
 .dropdownButton:hover .menuContent {
     /* display: block; */
+    visibility: visible;
     transform: scaleY(1);
     transform: translateY(0);
     opacity: 1;
