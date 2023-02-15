@@ -18,7 +18,7 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    padding: 5px;
+    padding: 8px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -46,14 +46,19 @@ header {
 }
 
 .menuContent {
-    display: none;
+    /* display: none; */
     position: absolute;
-    background-color: white;
+    background-color: #fff;
     width: 100%;
     left: 0;
-    top: 40px;
+    top: 35px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
+    transform: scaleY(0);
+    transform: translateY(10px);
+    opacity: 0;
+    transform-origin: top;
+    transition: transform ease-in 150ms, opacity ease-in 150ms;
 }
 
 .dropdown-content .heading {
@@ -63,7 +68,11 @@ header {
 }
 
 .dropdownButton:hover .menuContent {
-    display: block;
+    /* display: block; */
+    transform: scaleY(1);
+    transform: translateY(0);
+    opacity: 1;
+    transition: transform ease-in 150ms, opacity ease-in 150ms;
 }
 
 .column {
@@ -71,7 +80,7 @@ header {
 }
 
 .column a {
-    color: black;
+    color: gray;
     text-decoration: none;
     text-align: left;
 }
