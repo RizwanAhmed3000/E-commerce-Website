@@ -27,7 +27,67 @@ header {
     z-index: 1000;
 }
 
-h1, h2 {
+.navLeft {
+    display: flex;
+}
+
+.dropdownButton {
+    overflow: hidden;
+}
+
+.dropdownButton .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: black;
+    background-color: inherit;
+    font: inherit;
+    margin: 0;
+}
+
+.menuContent {
+    display: none;
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    left: 0;
+    top: 40px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content .heading {
+    background: red;
+    padding: 16px;
+    color: white;
+}
+
+.dropdownButton:hover .menuContent {
+    display: block;
+}
+
+.column {
+    padding: 10px;
+}
+
+.column a {
+    color: black;
+    text-decoration: none;
+    text-align: left;
+}
+
+/* Add a background color on hover */
+.column a:hover {
+    /* background-color: #ddd; */
+}
+
+
+.imageContainer{
+    padding: 10px;
+}
+
+h1,
+h2 {
     font-family: 'Frank Ruhl Libre', serif;
 }
 
@@ -50,7 +110,7 @@ h1, h2 {
     border-radius: 0 !important;
 }
 
-.btn:hover{
+.btn:hover {
     background-color: white !important;
     border-color: white !important;
 }
@@ -102,9 +162,12 @@ h1, h2 {
 .banner {
     padding-top: 20px;
 }
-.formTheBlog, .instaPost{
+
+.formTheBlog,
+.instaPost {
     background-color: white !important;
 }
+
 .post {
     display: flex;
     flex-wrap: wrap;
@@ -125,32 +188,40 @@ h1, h2 {
     text-align: center;
     align-self: stretch;
 }
-.form-control:focus{
+
+.form-control:focus {
     box-shadow: none !important;
     border-color: gray !important;
 }
-.right div ul li{
+
+.right div ul li, .column ul li {
     list-style: none;
     margin: 10px 1px;
 }
-.right div ul li a{
+
+.right div ul li a {
     text-decoration: none;
     color: gray;
 }
-.right div ul{
+
+.right div ul {
     padding: 20px;
     margin-bottom: 0;
 }
-.left{
+
+.left {
     padding: 10px 100px;
     align-self: center;
 }
-.left p{
+
+.left p {
     font-size: 12px;
 }
-.icons i{
+
+.icons i {
     margin: 10px;
 }
-.copyrights{
+
+.copyrights {
     margin: 0;
 }
