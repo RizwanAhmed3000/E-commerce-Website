@@ -47,7 +47,6 @@ header {
 
 .menuContent {
     visibility: collapse;
-    /* display: none; */
     position: absolute;
     background-color: #fff;
     width: 100%;
@@ -69,7 +68,6 @@ header {
 }
 
 .dropdownButton:hover .menuContent {
-    /* display: block; */
     visibility: visible;
     transform: scaleY(1);
     transform: translateY(0);
@@ -86,12 +84,6 @@ header {
     text-decoration: none;
     text-align: left;
 }
-
-/* Add a background color on hover */
-.column a:hover {
-    /* background-color: #ddd; */
-}
-
 
 .imageContainer{
     padding: 10px;
