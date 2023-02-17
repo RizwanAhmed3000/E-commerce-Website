@@ -81,6 +81,7 @@ header {
     color: gray;
     text-decoration: none;
     text-align: left;
+    transition: color ease 150ms;
 }
 
 .imageContainer{
@@ -203,6 +204,14 @@ h2 {
 .right div ul li a {
     text-decoration: none;
     color: gray;
+    transition: color ease 150ms;
+
+}
+
+.right div ul li a:hover{
+    color: black;
+    transition: color ease 150ms;
+
 }
 
 .right div ul {
@@ -225,4 +234,9 @@ h2 {
 
 .copyrights {
     margin: 0;
+}
+
+.menuItem a:hover{
+    color: black;
+    transition: color ease 150ms;
 }
