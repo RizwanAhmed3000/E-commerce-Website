@@ -328,3 +328,36 @@ h2 {
 .cardHover:hover .iconOverlayPost {
     height: 30%;
 }
+
+@media(max-width: 1024px){
+    .flexboxContainer{
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .menuContent{
+        padding: 0 !important;
+    }
+    .listItems{
+        padding: 0 !important;
+        margin:  0 !important;
+    }
+    .cardHover#pro1, .cardHover#pro2, .cardHover#pro3{
+        width: 10rem !important;
+    }
+    .footer{
+        padding: 0 !important;
+    }
+    #containerMargin{
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .left{
+        padding: 10px 0px 10px 30px;
+    }
+    .right .service ul, .right .page ul, .right .pages ul{
+        padding: 20px 8px;
+    }
+    #footerIconsAndCopyright{
+        padding-left: 0px !important;
+    }
+}
