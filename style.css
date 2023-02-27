@@ -329,6 +329,10 @@ h2 {
     height: 30%;
 }
 
+.flexboxContainer{
+    justify-content: flex-start !important;
+}
+
 @media(max-width: 1024px){
     .flexboxContainer{
         margin: 0 !important;
@@ -360,4 +364,70 @@ h2 {
     #footerIconsAndCopyright{
         padding-left: 0px !important;
     }
+    .banner{
+        position: relative;
+    }
+    .bannerTextDiv{
+        position: absolute;
+        width: fit-content;
+        right: 40%;
+        margin-left: 10px !important;
+
+    }
+    .bannerImage{
+        width: 60%;
+        margin-left: 30%;
+    }
+
+}
+
+@media(min-width: 501px) and (max-width: 768px) {
+    .flexboxContainer{
+        /* flex-direction: column !important; */
+        flex-wrap: wrap;
+        margin: 0px !important;
+    }
+    .imageContainer{
+        justify-content: space-evenly !important;
+        padding: 0px !important;
+    }
+    .cardHover#pro1, .cardHover#pro2, .cardHover#pro3{
+        width: 10rem !important;
+    }
+    .menuContent{
+        overflow: auto !important;
+    }
+    .listItems{
+        justify-content: space-around;
+    }
+    .left{
+        padding: 10px 0px 10px 10px;
+
+    }
+    .directionColoumn{
+        flex-direction: column !important;
+    }
+    .justify{
+        justify-content: space-around;
+    }
+    #footerIconsAndCopyright{
+        padding: 0px !important;
+    }
+    .cardHover:hover .iconOverlayPost{
+        height: 40%;
+    }
+    .banner{
+        position: relative;
+    }
+    .bannerTextDiv{
+        position: absolute;
+        width: fit-content;
+        right: 30% !important;
+        margin-left: 10px !important;
+    }
+    .bannerImage{
+        width: 70%;
+        margin-left: 30% !important;
+    }
+    
 }
