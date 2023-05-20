@@ -25,6 +25,7 @@ header {
     background-color: #fff;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
     z-index: 1000;
+    transition: background-color ease 250ms,  box-shadow ease 250ms;
 }
 
 .navLeft {
